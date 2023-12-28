@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color:blue;
+            --2ndccolor:rgb(100, 100, 177);
+            --3rdcolor:green;
+            --defpadding:25px;
+            --defopacity:0.4;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            /* opacity: var(--defopacity); */
+            list-style: none;
+            padding: var(--defpadding);
+            border: 10px solid var(--3rdcolor);
+        }
+        div:first-child{
+            /* background-color: rgb(8, 238, 66); */
+            background-color: var(--color);
+        }
+        /*   Same As (div:first-child{})  */
+        .box2{
+            background-color:var(--2ndccolor);
+        }
+        ul li:first-child{
+            /* background-color: var(--3rdcolor, red); */
+            /* background-color: red; */
+            /* Same as (bacground color) */
+            --color:orange;
+            background-color: var(--color);
+            /* border: 2px solid var(--2ndccolor); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus rerum quaerat ipsa animi unde odit ratione expedita rem maxime enim ab quisquam praesentium possimus, repellat at mollitia. Labore asperiores perspiciatis eligendi. Mollitia, suscipit temporibus!</p>
+
+    </div>
+</body>
+</html>

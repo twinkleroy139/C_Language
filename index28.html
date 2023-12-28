@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 80vw;
+            height: 433px;
+            border: 2px solid green;
+            padding: 3px;
+            margin: 3px;
+            /* display: flex; */
+        }
+
+        .box1 {
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: o;
+            background-color: aquamarine;
+            position: sticky;
+            /* z-index: 0; */
+            top: 0px;
+            /* left: 199px; */
+            /* filter: invert(); */
+        }
+
+        .box2 {
+             /* top: px; 
+             left: 70px;  */
+
+            background-color: blue;
+            /* position: relative; */
+        }
+
+        .box3 {
+            color: black;
+            bottom: 0px;
+            left: 8px;
+            position: fixed;
+            background-color: red;
+            height: 66px;
+            top: 400px;
+
+        }
+
+        .box4{
+            /* top: px; */
+            /* left: 15px; */
+            background-color: red;
+            /* position: absolute; */
+            
+        }
+        .parent {
+            /* border-style: double; */
+            padding: 43px;
+            margin: 10vw;
+            border: 3px solid purple;
+            position: sticky;
+            /* filter: invert(); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">I am box1</div>
+        <div class="box box2">I am box2</div>
+        <div class="box box3">uhdfuhysodyfh</div>
+        <div class="box box4"> Yes</div>
+
+    </div>
+</body>
+
+</html>

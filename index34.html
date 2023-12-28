@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Floats & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        
+        img{
+            Float:right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(4){
+            background-color: aquamarine;
+            clear: right;
+        }
+
+        
+        </style>
+</head>
+<body>
+    <!-- shortcut (.cards>.card*3)  -->
+    <div class="cards">
+        <img src="WhatsApp Image 2023-12-16 at 10.29.02 PM.jpeg" alt="" width="300px">
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nobis labore soluta. Voluptatem laudantium quod ut quam voluptatum repellat maiores eveniet blanditiis possimus adipisci?</div>
+        <div class="card">Card 2</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta provident porro earum perspiciatis libero accusamus sint, perferendis exercitationem, aliquid commodi recusandae non? Impedit assumenda cum necessitatibus eum facere adipisci doloremque quaerat facilis officia ullam. Sunt necessitatibus numquam quas magnam excepturi, dignissimos quia nobis sapiente quae exercitationem rem, nostrum vero? Nobis impedit, corrupti quo adipisci atque nesciunt deserunt dolorum alias expedita eveniet dicta fugiat deleniti, quis sit maiores assumenda, rem saepe tenetur incidunt excepturi officiis. Iusto repellat, repudiandae ea nulla vel expedita ad obcaecati asperiores vero quia placeat corrupti possimus ullam sint porro numquam. Sapiente nisi soluta quasi similique ducimus mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim soluta vitae fugit in amet, eligendi voluptatem quidem quaerat delectus maxime illo omnis incidunt numquam, atque laborum odit autem accusamus molestiae rem deserunt blanditiis eveniet doloribus, perspiciatis ratione? Nesciunt distinctio natus quasi eaque repudiandae ipsum laudantium, officia necessitatibus velit pariatur optio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur eius neque dignissimos quos sequi, sint perspiciatis expedita ratione voluptate dolorem nemo dolore officiis dolor cupiditate cumque accusantium eaque rem quasi unde nihil repudiandae. Ex, eius pariatur saepe nisi nemo nesciunt dolorum numquam voluptatum, error iusto esse assumenda accusamus vitae.</div>
+    </div>
+    
+</body>
+</html>
