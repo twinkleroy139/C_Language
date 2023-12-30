@@ -3,3 +3,9 @@
 *.mp4
 *.mp3
 *.jpeg
+/out
+/packages
+/node_modules
+!*/
+!*.txt
+*.txt 
